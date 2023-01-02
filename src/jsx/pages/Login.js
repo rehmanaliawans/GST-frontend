@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { loadingToggleAction, loginAction } from '../../store/actions/AuthActions';
 import loginbg from './../../images/bg6.jpg';
-import logo2 from './../../images/logo-white.png';
+import logo2 from './../../images/gsc_logo.jpeg';
 
 // image
 //import logo from "../../images/logo-full-white.png";
@@ -52,7 +52,7 @@ function Login(props) {
                 <div className="text-white max-w400 align-self-center">
                   <div className="logo">
                     <Link to={"#"}>
-                      <img src={logo2} alt="" />
+                      <img src={logo2} alt="" width={150} />
                     </Link>
                   </div>
                   <h2 className="mb-2 text-white font-w700">

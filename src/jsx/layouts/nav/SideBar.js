@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import useScrollPosition from 'use-scroll-position';
 
 import { ThemeContext } from '../../../context/ThemeContext';
-import LogoImg from '../../../images/logo.png';
+import LogoImg from '../../../images/gsc_logo.jpeg';
 
 /// Scroll
 /// Link
@@ -29,8 +29,7 @@ class MM extends Component {
 }
 
 const SideBar = () => {
-  const { iconHover, sidebarposition, headerposition, sidebarLayout } =
-    useContext(ThemeContext);
+  const { iconHover, sidebarposition, headerposition, sidebarLayout } = useContext(ThemeContext);
   useEffect(() => {
     var btn = document.querySelector(".nav-control");
     var aaa = document.querySelector("#main-wrapper");
@@ -138,28 +137,20 @@ const SideBar = () => {
       "page-error-500",
       "page-error-503"
     ],
-    error = [
-      "page-error-400",
-      "page-error-403",
-      "page-error-404",
-      "page-error-500",
-      "page-error-503"
-    ];
+    error = ["page-error-400", "page-error-403", "page-error-404", "page-error-500", "page-error-503"];
 
   return (
     <div className={`deznav _i-hover`} style={{ backgroundColor: "0a0a76" }}>
-          
       <PerfectScrollbar className="deznav-scroll">
         <MM className="metismenu" id="menu">
-          <li style={{marginBottom: "4rem"}}>
-          <Link children="ai-icon" to="/">
+          <li style={{ marginBottom: "4rem" }}>
+            <Link children="ai-icon" to="/">
               <i>
-                <img src={LogoImg} alt="logo"width={30}/>
-            </i>
+                <img src={LogoImg} alt="logo" width={40} />
+              </i>
               <span className="nav-text">GSC Exchange</span>
-           
             </Link>
-            </li>
+          </li>
           <li className={`${path === "dashboard" ? "mm-active" : ""}`}>
             <Link children="ai-icon" to="/dashboard">
               <i className="flaticon-025-dashboard"></i>
@@ -167,31 +158,31 @@ const SideBar = () => {
             </Link>
           </li>
           <li className={`${path === "deposit" ? "mm-active" : ""}`}>
-            <Link  to="#">
+            <Link to="#">
               <i className="flaticon-050-info"></i>
               <span className="nav-text">Deposit</span>
             </Link>
           </li>
           <li className={`${path === "withdraw" ? "mm-active" : ""}`}>
-            <Link  to="#">
+            <Link to="#">
               <i className="flaticon-041-graph"></i>
               <span className="nav-text">Withdraw</span>
             </Link>
           </li>
           <li className={`${path === "buy-sell" ? "mm-active" : ""}`}>
-            <Link  to="#">
+            <Link to="#">
               <i className="flaticon-086-star"></i>
               <span className="nav-text">Buy/Sell</span>
             </Link>
           </li>
           <li className={`${path === "exchange" ? "mm-active" : ""}`}>
-            <Link  to="#">
+            <Link to="#">
               <i className="flaticon-045-heart"></i>
               <span className="nav-text">Exchange</span>
             </Link>
           </li>
           <li className={`${path === "setting" ? "mm-active" : ""}`}>
-            <Link  to="#">
+            <Link to="#">
               <i className="flaticon-087-setting"></i>
               <span className="nav-text">Setting</span>
             </Link>

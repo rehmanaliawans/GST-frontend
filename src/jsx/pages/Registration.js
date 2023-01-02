@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { connect, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import logo from '../../images/logo-full.png';
+import logo from '../../images/gsc_logo.jpeg';
 import { loadingToggleAction, signupAction } from '../../store/actions/AuthActions';
 
 // image
@@ -69,7 +69,7 @@ function Register(props) {
                   <div className="auth-form">
                     <div className="text-center mb-3">
                       <Link to="/login">
-                        <img src={logo} alt="" />
+                        <img src={logo} alt="" width={100} />
                       </Link>
                     </div>
                     <h4 className="text-center mb-4 ">Sign up your account</h4>
